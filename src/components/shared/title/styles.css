@@ -5,3 +5,6 @@
     font-size: 5vw;
     font-weight: bolder;
 }
+#title:hover{
+    -webkit-text-fill-color: green;
+}

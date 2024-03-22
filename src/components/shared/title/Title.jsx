@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
 
+import { motion } from "framer-motion";
+
 export default function Title() {
   const [hovered, setHovered] = useState(false);
   const [hovered1, setHovered1] = useState(false);
@@ -16,32 +18,49 @@ export default function Title() {
     <div className="relative">
       <div>
         <div className="">
-          <h1
+          <motion.h1
+            initial={{ x: -1000 }}
+            transition={{
+              duration: "2",
+            }}
+            animate={{ x: 0 }}
             id="title"
             className="relative"
             onMouseOver={mouseOver}
             onMouseLeave={mouseLeave}
           >
             Our Product
-          </h1>
+          </motion.h1>
           {hovered && (
-            <img
-              className=" h-44 w-44 absolute right-72 top-10"
-              src="https://swiperjs.com/demos/images/nature-1.jpg"
-              alt=""
-            />
+            <motion.div
+              animate={{ x: 0 }}
+              transition={{
+                duration: "3",
+              }}
+            >
+              <img
+                className=" h-44 w-44 absolute right-72 top-10"
+                src="https://swiperjs.com/demos/images/nature-1.jpg"
+                alt=""
+              />
+            </motion.div>
           )}
         </div>
       </div>
       <div className="">
-        <h1
+        <motion.h1
+          initial={{ x: -1000 }}
+          transition={{
+            duration: "3",
+          }}
+          animate={{ x: 0 }}
           id="title"
           className="relative"
           onMouseOver={mouseOver1}
           onMouseLeave={mouseLeave1}
         >
           New journey
-        </h1>
+        </motion.h1>
         {hovered1 && (
           <img
             className="h-44 w-44 absolute right-80 top-16"
@@ -51,14 +70,19 @@ export default function Title() {
         )}
       </div>
       <div className="">
-        <h1
+        <motion.h1
+          initial={{ x: -1000 }}
+          transition={{
+            duration: "4",
+          }}
+          animate={{ x: 0 }}
           id="title"
           className="relative"
           onMouseOver={mouseOver2}
           onMouseLeave={mouseLeave2}
         >
           Released
-        </h1>
+        </motion.h1>
         {hovered2 && (
           <img
             className=" h-44 w-44 absolute right-96 top-24"
