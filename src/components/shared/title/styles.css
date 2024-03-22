@@ -1,0 +1,7 @@
+#title{
+    -webkit-text-stroke: .2vw green;
+    -webkit-text-fill-color: white;
+    text-transform: uppercase; 
+    font-size: 5vw;
+    font-weight: bolder;
+}
