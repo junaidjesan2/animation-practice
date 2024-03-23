@@ -11,7 +11,7 @@ function App() {
       <div className="w-10/12 mx-auto">
         <Home></Home>
       </div>
-      <div className="py-20">
+      <div className="">
         <Footer></Footer>
       </div>
     </>
