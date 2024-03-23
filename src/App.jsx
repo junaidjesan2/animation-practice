@@ -5,11 +5,15 @@ import Footer from "./components/shared/Footer";
 function App() {
   return (
     <>
-      <Header></Header>
+      <div>
+        <Header></Header>
+      </div>
       <div className="w-10/12 mx-auto">
         <Home></Home>
       </div>
-      <Footer></Footer>
+      <div className="py-20">
+        <Footer></Footer>
+      </div>
     </>
   );
 }

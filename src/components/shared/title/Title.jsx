@@ -95,7 +95,7 @@ export default function Title() {
             transition={{ duration: 1 }}
           >
             <img
-              className=" h-44 w-44 absolute right-96 top-24 opacity-70 transition delay-1000 ease-in-out"
+              className=" h-44 w-44 absolute right-96 top-24"
               src="https://swiperjs.com/demos/images/nature-3.jpg"
               alt=""
             />
