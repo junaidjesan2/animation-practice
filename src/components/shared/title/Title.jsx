@@ -21,7 +21,7 @@ export default function Title() {
           <motion.h1
             initial={{ x: -1000 }}
             transition={{
-              duration: "2",
+              duration: 2,
             }}
             animate={{ x: 0 }}
             id="title"
@@ -33,13 +33,12 @@ export default function Title() {
           </motion.h1>
           {hovered && (
             <motion.div
-              animate={{ x: 0 }}
-              transition={{
-                duration: "3",
-              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1,}}
+              transition={{ duration: 1 }}
             >
               <img
-                className=" h-44 w-44 absolute right-72 top-10"
+                className=" h-44 w-44 absolute right-72 top-10 opacity-70"
                 src="https://swiperjs.com/demos/images/nature-1.jpg"
                 alt=""
               />
@@ -51,7 +50,7 @@ export default function Title() {
         <motion.h1
           initial={{ x: -1000 }}
           transition={{
-            duration: "3",
+            duration: 3,
           }}
           animate={{ x: 0 }}
           id="title"
@@ -62,18 +61,24 @@ export default function Title() {
           New journey
         </motion.h1>
         {hovered1 && (
-          <img
-            className="h-44 w-44 absolute right-80 top-16"
-            src="https://swiperjs.com/demos/images/nature-2.jpg"
-            alt=""
-          />
+          <motion.div
+            initial={{ opacity: 0, x: 0, y: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <img
+              className="h-44 w-44 absolute right-80 top-16 opacity-70"
+              src="https://swiperjs.com/demos/images/nature-2.jpg"
+              alt=""
+            />
+          </motion.div>
         )}
       </div>
       <div className="">
         <motion.h1
           initial={{ x: -1000 }}
           transition={{
-            duration: "4",
+            duration: 4,
           }}
           animate={{ x: 0 }}
           id="title"
@@ -84,11 +89,17 @@ export default function Title() {
           Released
         </motion.h1>
         {hovered2 && (
-          <img
-            className=" h-44 w-44 absolute right-96 top-24"
-            src="https://swiperjs.com/demos/images/nature-3.jpg"
-            alt=""
-          />
+          <motion.div
+            initial={{ opacity: 0, x: 0, y: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <img
+              className=" h-44 w-44 absolute right-96 top-24 opacity-70 transition delay-1000 ease-in-out"
+              src="https://swiperjs.com/demos/images/nature-3.jpg"
+              alt=""
+            />
+          </motion.div>
         )}
       </div>
     </div>
